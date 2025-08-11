@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a8456f8d-f23e-4da5-8400-19a058209db5",
+		"name": "School API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47481204",
+		"_collection_link": "https://pheonixyt5-1956279.postman.co/workspace/phoenix's-Workspace~ef17eb79-262a-45b1-80ab-750e6518547e/collection/47481204-a8456f8d-f23e-4da5-8400-19a058209db5?action=share&source=collection_link&creator=47481204"
+	},
+	"item": [
+		{
+			"name": "Add School",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"New Horizon School\",\r\n  \"address\": \"456 Park Street, Kolkata, India\",\r\n  \"latitude\": 22.5726,\r\n  \"longitude\": 88.3639\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-js-assignment-3kij.onrender.com/addSchool",
+					"protocol": "https",
+					"host": [
+						"node-js-assignment-3kij",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"addSchool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List School",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-js-assignment-3kij.onrender.com/listSchools?latitude=22.5726&longitude=88.3639",
+					"protocol": "https",
+					"host": [
+						"node-js-assignment-3kij",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "22.5726"
+						},
+						{
+							"key": "longitude",
+							"value": "88.3639"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
