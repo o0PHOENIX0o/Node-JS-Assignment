@@ -14,7 +14,8 @@ A simple Node.js API for managing schools. This project provides endpoints to li
 - **Description:** Returns a list of all schools.
 - **Example Request:**
   ```http
-  GET https://node-js-assignment-3kij.onrender.com/listSchools
+  GET https://node-js-assignment-3kij.onrender.com/listSchools?latitude=37.7749&longitude=-122.4194
+)
   ```
 
 ### 2. Add School
@@ -59,3 +60,4 @@ A simple Node.js API for managing schools. This project provides endpoints to li
 ## Postman Collection
 
 A Postman collection is included as `School API.postman_collection.json` for easy testing of the endpoints.
+
